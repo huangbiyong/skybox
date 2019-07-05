@@ -80,8 +80,8 @@ extension ViewController {
         
         var starshipPositions1 = starshipPositions
         glBufferData(GLenum(GL_ARRAY_BUFFER), MemoryLayout.size(ofValue: starshipPositions1), &starshipPositions1 , GLenum(GL_STATIC_DRAW))
-        glEnableVertexAttribArray(GLuint(GLKVertexAttrib.position.rawValue))
-        glVertexAttribPointer(GLuint(GLKVertexAttrib.position.rawValue), 3, GLenum(GL_FLOAT), GLboolean(GL_FALSE), GLsizei(MemoryLayout<GLfloat>.stride*0), nil)
+        glEnableVertexAttribArray(GLuint(GLKVertexAttrib.position.rawValue)) // 设置顶点可见
+        glVertexAttribPointer(GLuint(GLKVertexAttrib.position.rawValue), 3, GLenum(GL_FLOAT), GLboolean(GL_FALSE), GLsizei(MemoryLayout<GLfloat>.stride*0), nil) // 设置顶点数据的读取方式
         
         mPositionBuffer = buffer
 
@@ -92,8 +92,8 @@ extension ViewController {
         
         starshipPositions1 = starshipNormals
         glBufferData(GLenum(GL_ARRAY_BUFFER), MemoryLayout.size(ofValue: starshipPositions1), &starshipPositions1 , GLenum(GL_STATIC_DRAW))
-        glEnableVertexAttribArray(GLuint(GLKVertexAttrib.position.rawValue))
-        glVertexAttribPointer(GLuint(GLKVertexAttrib.position.rawValue), 3, GLenum(GL_FLOAT), GLboolean(GL_FALSE), GLsizei(MemoryLayout<GLfloat>.stride*0), nil)
+        glEnableVertexAttribArray(GLuint(GLKVertexAttrib.normal.rawValue)) // 设置法线可见
+        glVertexAttribPointer(GLuint(GLKVertexAttrib.normal.rawValue), 3, GLenum(GL_FLOAT), GLboolean(GL_FALSE), GLsizei(MemoryLayout<GLfloat>.stride*0), nil) // 设置发现数据的读取方式
         
         mNormalBuffer = buffer
        
@@ -122,20 +122,15 @@ extension ViewController {
         
         baseEffect.transform.modelviewMatrix = GLKMatrix4MakeLookAt(eyePosition.x, eyePosition.y, eyePosition.z, lookAtPosition.x, lookAtPosition.y, lookAtPosition.z, upVector.x, upVector.y, upVector.z)
         
-        
-        
         skyboxEffect.center = self.eyePosition
         skyboxEffect.transform.projectionMatrix = baseEffect.transform.projectionMatrix
         skyboxEffect.transform.modelviewMatrix = baseEffect.transform.modelviewMatrix
         
-        
-        
+
         angle += 0.01
         
-        eyePosition = GLKVector3Make(-5.0 * sin(angle), -5.0, -5.0 * cos(angle))
-        lookAtPosition = GLKVector3Make(0.0 , 1.5 + -5.0 * sin(0.3 * angle), 0.0)
-        
-       
+        eyePosition = GLKVector3Make(5.0 * sin(angle), -5.0, 5.0 * cos(angle))  // 眼睛位置
+        lookAtPosition = GLKVector3Make(0.0 , 1.5 + -5.0 * sin(0.3 * angle), 0.0) // 观察的位置， 为了效果更好上下浮动
     }
     
 }
@@ -146,17 +141,20 @@ extension ViewController {
         glClearColor(0.5, 0.1, 0.1, 1.0)
         glClear(GLbitfield(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT))
         
+        // 1. 改变视角
         setMatrices()
         
+        // 2. 绘制天空盒子
         skyboxEffect.prepareToDraw()
         glDepthMask(GLboolean(GL_FALSE))
         skyboxEffect.draw()
         glDepthMask(GLboolean(GL_TRUE))
         
         
-        glBindBuffer(GLenum(GL_ELEMENT_ARRAY_BUFFER), 0)
-        glBindTexture(GLenum(GL_TEXTURE_CUBE_MAP), 0)
+        //glBindBuffer(GLenum(GL_ELEMENT_ARRAY_BUFFER), 0)
+        //glBindTexture(GLenum(GL_TEXTURE_CUBE_MAP), 0)
 
+        // 3. 读取飞机模型数据
         glBindBuffer(GLenum(GL_ARRAY_BUFFER), mPositionBuffer!);
         glEnableVertexAttribArray(GLuint(GLKVertexAttrib.position.rawValue));
         glVertexAttribPointer(GLuint(GLKVertexAttrib.position.rawValue), 3, GLenum(GL_FLOAT), GLboolean(GL_FALSE), 0, nil);
@@ -171,8 +169,7 @@ extension ViewController {
         let firstsM = Mirror(reflecting: starshipFirsts)
         let countsM = Mirror(reflecting: starshipCounts)
         
-        
-       
+    
         var diffusesArr:[ (GLfloat, GLfloat, GLfloat)] = []
         var specularsArr:[ (GLfloat, GLfloat, GLfloat)] = []
         var firstsArr:[ GLint] = []
@@ -200,7 +197,7 @@ extension ViewController {
         }
    
         
-        // 绘制飞机
+        // 4. 绘制飞机   需要绘制不同的颜色，所以需要for循环
         for i in 0..<diffusesArr.count {
 
             let diffusesValue = diffusesArr[i]
@@ -213,6 +210,10 @@ extension ViewController {
             baseEffect.prepareToDraw()
             glDrawArrays(GLenum(GL_TRIANGLES), firstValue, countValue);
         }
+        
+        // 如果不想使用多种颜色的飞机，可以这样写，比较简洁
+//        baseEffect.prepareToDraw()
+//        glDrawArrays(GLenum(GL_TRIANGLES), 0, 30+33+3); // 30+33+3 == starshipCounts
 
         
     }
