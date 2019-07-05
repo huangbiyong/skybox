@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D5067B822CDFAA500996E90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5067B722CDFAA500996E90 /* AppDelegate.swift */; };
+		6D5067BA22CDFAA500996E90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5067B922CDFAA500996E90 /* SceneDelegate.swift */; };
+		6D5067BC22CDFAA500996E90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5067BB22CDFAA500996E90 /* ViewController.swift */; };
+		6D5067BF22CDFAA500996E90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D5067BD22CDFAA500996E90 /* Main.storyboard */; };
+		6D5067C122CDFAAE00996E90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D5067C022CDFAAE00996E90 /* Assets.xcassets */; };
+		6D5067C422CDFAAE00996E90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D5067C222CDFAAE00996E90 /* LaunchScreen.storyboard */; };
+		6D5067D022CDFAE600996E90 /* starship.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D5067CF22CDFAE600996E90 /* starship.c */; };
+		6D5067D222CDFAFB00996E90 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D5067D122CDFAFB00996E90 /* image.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6D5067B422CDFAA500996E90 /* SkyBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D5067B722CDFAA500996E90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6D5067B922CDFAA500996E90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6D5067BB22CDFAA500996E90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6D5067BE22CDFAA500996E90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6D5067C022CDFAAE00996E90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D5067C322CDFAAE00996E90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D5067C522CDFAAE00996E90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D5067CD22CDFAE500996E90 /* SkyBox-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SkyBox-Bridging-Header.h"; sourceTree = "<group>"; };
+		6D5067CE22CDFAE600996E90 /* starship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = starship.h; sourceTree = "<group>"; };
+		6D5067CF22CDFAE600996E90 /* starship.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = starship.c; sourceTree = "<group>"; };
+		6D5067D122CDFAFB00996E90 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D5067B122CDFAA500996E90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D5067AB22CDFAA500996E90 = {
+			isa = PBXGroup;
+			children = (
+				6D5067B622CDFAA500996E90 /* SkyBox */,
+				6D5067B522CDFAA500996E90 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D5067B522CDFAA500996E90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D5067B422CDFAA500996E90 /* SkyBox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D5067B622CDFAA500996E90 /* SkyBox */ = {
+			isa = PBXGroup;
+			children = (
+				6D5067CC22CDFACB00996E90 /* Res */,
+				6D5067B722CDFAA500996E90 /* AppDelegate.swift */,
+				6D5067B922CDFAA500996E90 /* SceneDelegate.swift */,
+				6D5067BB22CDFAA500996E90 /* ViewController.swift */,
+				6D5067BD22CDFAA500996E90 /* Main.storyboard */,
+				6D5067C022CDFAAE00996E90 /* Assets.xcassets */,
+				6D5067C222CDFAAE00996E90 /* LaunchScreen.storyboard */,
+				6D5067C522CDFAAE00996E90 /* Info.plist */,
+			);
+			path = SkyBox;
+			sourceTree = "<group>";
+		};
+		6D5067CC22CDFACB00996E90 /* Res */ = {
+			isa = PBXGroup;
+			children = (
+				6D5067D122CDFAFB00996E90 /* image.png */,
+				6D5067CF22CDFAE600996E90 /* starship.c */,
+				6D5067CE22CDFAE600996E90 /* starship.h */,
+				6D5067CD22CDFAE500996E90 /* SkyBox-Bridging-Header.h */,
+			);
+			path = Res;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D5067B322CDFAA500996E90 /* SkyBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D5067C822CDFAAE00996E90 /* Build configuration list for PBXNativeTarget "SkyBox" */;
+			buildPhases = (
+				6D5067B022CDFAA500996E90 /* Sources */,
+				6D5067B122CDFAA500996E90 /* Frameworks */,
+				6D5067B222CDFAA500996E90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkyBox;
+			productName = SkyBox;
+			productReference = 6D5067B422CDFAA500996E90 /* SkyBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D5067AC22CDFAA500996E90 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = chase;
+				TargetAttributes = {
+					6D5067B322CDFAA500996E90 = {
+						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
+					};
+				};
+			};
+			buildConfigurationList = 6D5067AF22CDFAA500996E90 /* Build configuration list for PBXProject "SkyBox" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D5067AB22CDFAA500996E90;
+			productRefGroup = 6D5067B522CDFAA500996E90 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D5067B322CDFAA500996E90 /* SkyBox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D5067B222CDFAA500996E90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D5067C422CDFAAE00996E90 /* LaunchScreen.storyboard in Resources */,
+				6D5067C122CDFAAE00996E90 /* Assets.xcassets in Resources */,
+				6D5067BF22CDFAA500996E90 /* Main.storyboard in Resources */,
+				6D5067D222CDFAFB00996E90 /* image.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D5067B022CDFAA500996E90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D5067BC22CDFAA500996E90 /* ViewController.swift in Sources */,
+				6D5067D022CDFAE600996E90 /* starship.c in Sources */,
+				6D5067B822CDFAA500996E90 /* AppDelegate.swift in Sources */,
+				6D5067BA22CDFAA500996E90 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6D5067BD22CDFAA500996E90 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D5067BE22CDFAA500996E90 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6D5067C222CDFAAE00996E90 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D5067C322CDFAAE00996E90 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D5067C622CDFAAE00996E90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6D5067C722CDFAAE00996E90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D5067C922CDFAAE00996E90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72U33C4H3Q;
+				INFOPLIST_FILE = SkyBox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chase.SkyBox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SkyBox/Res/SkyBox-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D5067CA22CDFAAE00996E90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72U33C4H3Q;
+				INFOPLIST_FILE = SkyBox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chase.SkyBox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SkyBox/Res/SkyBox-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D5067AF22CDFAA500996E90 /* Build configuration list for PBXProject "SkyBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D5067C622CDFAAE00996E90 /* Debug */,
+				6D5067C722CDFAAE00996E90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D5067C822CDFAAE00996E90 /* Build configuration list for PBXNativeTarget "SkyBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D5067C922CDFAAE00996E90 /* Debug */,
+				6D5067CA22CDFAAE00996E90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D5067AC22CDFAA500996E90 /* Project object */;
+}
