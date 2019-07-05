@@ -129,7 +129,7 @@ extension ViewController {
 
         angle += 0.01
         
-        eyePosition = GLKVector3Make(5.0 * sin(angle), -5.0, 5.0 * cos(angle))  // 眼睛位置
+        eyePosition = GLKVector3Make(-5.0 * sin(angle), -5.0, -5.0 * cos(angle))  // 眼睛位置
         lookAtPosition = GLKVector3Make(0.0 , 1.5 + -5.0 * sin(0.3 * angle), 0.0) // 观察的位置， 为了效果更好上下浮动
     }
     
